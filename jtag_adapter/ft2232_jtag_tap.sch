@@ -536,9 +536,9 @@ Text Label 7650 2550 2    50   ~ 0
 ~SRST
 Text Label 7650 2650 2    50   ~ 0
 ~TRST
-Text Label 8850 4600 0    50   ~ 0
-~SRST
 Text Label 8850 4700 0    50   ~ 0
+~SRST
+Text Label 8850 4600 0    50   ~ 0
 ~TRST
 Wire Wire Line
 	9100 4600 8850 4600

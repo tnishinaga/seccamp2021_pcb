@@ -130,7 +130,7 @@ U 1 1 60863A7D
 P 9700 5100
 F 0 "J2" H 9170 5146 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_20" H 9170 5055 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 10150 4050 50  0001 L TNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Horizontal" H 10150 4050 50  0001 L TNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 9350 3850 50  0001 C CNN
 F 4 "3020-20-0200-00" H 9700 5100 50  0001 C CNN "MPN"
 	1    9700 5100
@@ -536,9 +536,9 @@ Text Label 7650 2550 2    50   ~ 0
 ~SRST
 Text Label 7650 2650 2    50   ~ 0
 ~TRST
-Text Label 8850 4600 0    50   ~ 0
-~SRST
 Text Label 8850 4700 0    50   ~ 0
+~SRST
+Text Label 8850 4600 0    50   ~ 0
 ~TRST
 Wire Wire Line
 	9100 4600 8850 4600
@@ -1603,4 +1603,15 @@ F 3 "" H 10350 1550 50  0001 C CNN
 $EndComp
 Text Notes 9400 750  0    50   ~ 0
 for VCCIO(3.3v)
+$Comp
+L Device:Crystal Y?
+U 1 1 610720D9
+P 16000 4250
+F 0 "Y?" H 16000 4518 50  0000 C CNN
+F 1 "Crystal" H 16000 4427 50  0000 C CNN
+F 2 "" H 16000 4250 50  0001 C CNN
+F 3 "~" H 16000 4250 50  0001 C CNN
+	1    16000 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
