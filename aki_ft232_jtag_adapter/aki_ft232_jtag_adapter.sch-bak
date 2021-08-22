@@ -1,0 +1,160 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L aki_ft232:aki_ft232hl U?
+U 1 1 61062E27
+P 3700 3050
+F 0 "U?" H 3675 3915 50  0000 C CNN
+F 1 "aki_ft232hl" H 3675 3824 50  0000 C CNN
+F 2 "" H 3700 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0001 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_20 J?
+U 1 1 610658F7
+P 1400 3000
+F 0 "J?" H 871 3046 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_20" H 871 2955 50  0000 R CNN
+F 2 "" H 1850 1950 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.dui0499b/DUI0499B_system_design_reference.pdf" V 1050 1750 50  0001 C CNN
+	1    1400 3000
+	1    0    0    -1  
+$EndComp
+Text Label 2750 3050 0    50   ~ 0
+TCK
+Text Label 2750 3150 0    50   ~ 0
+TDI
+Text Label 2750 3250 0    50   ~ 0
+TDO
+Text Label 2750 3350 0    50   ~ 0
+TMS
+Text Label 2750 3450 0    50   ~ 0
+~SRST
+Text Label 2750 3550 0    50   ~ 0
+~TRST
+Text Label 2750 3750 0    50   ~ 0
+RTCK
+Wire Wire Line
+	2750 3050 3100 3050
+Wire Wire Line
+	2750 3150 3100 3150
+Wire Wire Line
+	3100 3250 2750 3250
+Wire Wire Line
+	2750 3350 3100 3350
+Wire Wire Line
+	3100 3450 2750 3450
+Wire Wire Line
+	2750 3550 3100 3550
+Wire Wire Line
+	3100 3750 2750 3750
+$Comp
+L power:GND #PWR?
+U 1 1 6106EADD
+P 4450 2500
+F 0 "#PWR?" H 4450 2250 50  0001 C CNN
+F 1 "GND" H 4455 2327 50  0000 C CNN
+F 2 "" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6106F568
+P 2600 3000
+F 0 "#PWR?" H 2600 2750 50  0001 C CNN
+F 1 "GND" H 2605 2827 50  0000 C CNN
+F 2 "" H 2600 3000 50  0001 C CNN
+F 3 "" H 2600 3000 50  0001 C CNN
+	1    2600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2950 2600 2950
+Wire Wire Line
+	2600 2950 2600 3000
+NoConn ~ 3100 2450
+NoConn ~ 3100 2550
+NoConn ~ 3100 2650
+NoConn ~ 3100 2750
+NoConn ~ 3100 2850
+NoConn ~ 4250 2550
+NoConn ~ 4250 2650
+NoConn ~ 4250 2750
+NoConn ~ 4250 2850
+NoConn ~ 4250 2950
+NoConn ~ 4250 3050
+NoConn ~ 4250 3150
+NoConn ~ 4250 3250
+NoConn ~ 4250 3350
+NoConn ~ 4250 3450
+NoConn ~ 4250 3550
+NoConn ~ 4250 3650
+NoConn ~ 4250 3750
+NoConn ~ 3100 3650
+Wire Wire Line
+	4250 2450 4450 2450
+Wire Wire Line
+	4450 2450 4450 2500
+Text Label 2300 2800 2    50   ~ 0
+RTCK
+Text Label 2300 2500 2    50   ~ 0
+~TRST
+Text Label 2300 2600 2    50   ~ 0
+~SRST
+Text Label 2300 3000 2    50   ~ 0
+TMS
+Text Label 2300 3100 2    50   ~ 0
+TDO
+Text Label 2300 3200 2    50   ~ 0
+TDI
+Text Label 2300 2900 2    50   ~ 0
+TCK
+$Comp
+L power:GND #PWR?
+U 1 1 61072FF7
+P 1300 3950
+F 0 "#PWR?" H 1300 3700 50  0001 C CNN
+F 1 "GND" H 1305 3777 50  0000 C CNN
+F 2 "" H 1300 3950 50  0001 C CNN
+F 3 "" H 1300 3950 50  0001 C CNN
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3800 1300 3950
+Wire Wire Line
+	2000 2500 2300 2500
+Wire Wire Line
+	2300 2600 2000 2600
+Wire Wire Line
+	2000 2800 2300 2800
+Wire Wire Line
+	2300 2900 2000 2900
+Wire Wire Line
+	2000 3000 2300 3000
+Wire Wire Line
+	2300 3100 2000 3100
+Wire Wire Line
+	2000 3200 2300 3200
+NoConn ~ 2000 3400
+NoConn ~ 2000 3500
+NoConn ~ 1400 2200
+NoConn ~ 1300 2200
+$EndSCHEMATC

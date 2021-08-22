@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name aki_ft232)(type Legacy)(uri ${KIPRJMOD}/aki_ft232hl/aki_ft232.lib)(options "")(descr ""))
+)
