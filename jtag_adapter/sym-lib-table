@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name 213718-0001)(type Legacy)(uri ${KIPRJMOD}/213718-0001/213718-0001.lib)(options "")(descr ""))
+  (lib (name sit2001)(type Legacy)(uri ${KIPRJMOD}/libs/sit2001/sit2001.lib)(options "")(descr ""))
+  (lib (name lsf010x)(type Legacy)(uri ${KIPRJMOD}/libs/lsf010x/lsf010x.lib)(options "")(descr ""))
+  (lib (name tc2wb6xcfk)(type Legacy)(uri ${KIPRJMOD}/libs/tc2wb6xcfk/tc2wb6xcfk.lib)(options "")(descr ""))
+  (lib (name sn74axch4t245)(type Legacy)(uri ${KIPRJMOD}/libs/sn74axch4t245/sn74axch4t245.lib)(options "")(descr ""))
 )
