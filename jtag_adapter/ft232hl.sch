@@ -1076,9 +1076,9 @@ Text HLabel 7900 2700 2    50   Input ~ 0
 JTAG_TDO
 Text HLabel 7900 2800 2    50   Input ~ 0
 JTAG_TMS
-Text HLabel 7900 4100 2    50   Input ~ 0
-JTAG_nSRST
 Text HLabel 7900 4200 2    50   Input ~ 0
+JTAG_nSRST
+Text HLabel 7900 4300 2    50   Input ~ 0
 JTAG_nTRST
 Text HLabel 7900 3200 2    50   Input ~ 0
 JTAG_RTCK
@@ -1273,7 +1273,7 @@ Wire Wire Line
 	1650 3550 1650 3700
 Wire Wire Line
 	1650 4000 1650 4200
-Text Label 7900 4300 0    50   ~ 0
+Text Label 7900 4100 0    50   ~ 0
 JTAG_ACT_LED
 Text HLabel 7900 3800 2    50   Input ~ 0
 SWD_EN
@@ -1370,4 +1370,8 @@ NoConn ~ 7100 3400
 NoConn ~ 7100 3500
 NoConn ~ 7100 3600
 NoConn ~ 7100 3700
+Text Label 5050 3400 0    50   ~ 0
+~RESET
+Text Notes 7050 4550 0    50   ~ 0
+ACBUS8 & 9 are connected \nto an internal pull-up resistor.
 $EndSCHEMATC

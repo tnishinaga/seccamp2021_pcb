@@ -18,11 +18,11 @@ Wire Wire Line
 NoConn ~ 8900 3950
 NoConn ~ 8900 4050
 NoConn ~ 9500 2750
-Text HLabel 1650 3250 0    50   Input ~ 0
+Text HLabel 1650 3050 0    50   Input ~ 0
 JTAG_RTCK
 Text HLabel 4700 5300 0    50   Input ~ 0
 JTAG_TCK
-Text HLabel 1650 3050 0    50   Input ~ 0
+Text HLabel 1650 3250 0    50   Input ~ 0
 JTAG_TDI
 Text Label 9600 2600 0    50   ~ 0
 VTREF
@@ -238,7 +238,7 @@ F 3 "" H 5200 5950 50  0001 C CNN
 $EndComp
 Text HLabel 1250 4600 0    50   Input ~ 0
 SWDIO_OE
-Text HLabel 1650 3150 0    50   Input ~ 0
+Text HLabel 1650 2950 0    50   Input ~ 0
 JTAG_TDO
 $Comp
 L Device:R R?
@@ -509,21 +509,17 @@ Wire Wire Line
 Wire Wire Line
 	2050 2550 2150 2550
 Connection ~ 2050 2450
-Wire Wire Line
-	2150 2650 1800 2650
 $Comp
 L power:GND #PWR054
 U 1 1 6167DD42
-P 1800 2800
-F 0 "#PWR054" H 1800 2550 50  0001 C CNN
-F 1 "GND" H 1950 2750 50  0000 C CNN
-F 2 "" H 1800 2800 50  0001 C CNN
-F 3 "" H 1800 2800 50  0001 C CNN
-	1    1800 2800
+P 1950 2800
+F 0 "#PWR054" H 1950 2550 50  0001 C CNN
+F 1 "GND" H 2100 2750 50  0000 C CNN
+F 2 "" H 1950 2800 50  0001 C CNN
+F 3 "" H 1950 2800 50  0001 C CNN
+	1    1950 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 2750 1800 2750
 Wire Wire Line
 	2150 2950 1650 2950
 Wire Wire Line
@@ -533,24 +529,20 @@ Wire Wire Line
 Wire Wire Line
 	1650 3250 2150 3250
 Wire Wire Line
-	1800 2750 1800 2800
-Wire Wire Line
 	1650 2450 2050 2450
-Wire Wire Line
-	1800 2600 1800 2650
 Text Label 7250 3550 0    50   ~ 0
 TMS_SWDIO
-Text Label 3550 3250 0    50   ~ 0
+Text Label 3550 3050 0    50   ~ 0
 RTCK
 Text Label 5750 5300 0    50   ~ 0
 TCK_SWDCLK
-Text Label 3550 2950 0    50   ~ 0
-TMS_SWDIO
-Text HLabel 1650 2950 0    50   Input ~ 0
-JTAG_TMS
-Text Label 3550 3050 0    50   ~ 0
-TDI
 Text Label 3550 3150 0    50   ~ 0
+TMS_SWDIO
+Text HLabel 1650 3150 0    50   Input ~ 0
+JTAG_TMS
+Text Label 3550 3250 0    50   ~ 0
+TDI
+Text Label 3550 2950 0    50   ~ 0
 TDO_SWO
 Wire Wire Line
 	3150 2950 3550 2950
@@ -685,37 +677,29 @@ F 3 "" H 2650 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 5850 2650 6000
-Wire Wire Line
-	2150 5050 1800 5050
 $Comp
 L power:GND #PWR056
 U 1 1 612EF461
-P 1800 5200
-F 0 "#PWR056" H 1800 4950 50  0001 C CNN
-F 1 "GND" H 1950 5150 50  0000 C CNN
-F 2 "" H 1800 5200 50  0001 C CNN
-F 3 "" H 1800 5200 50  0001 C CNN
-	1    1800 5200
+P 1950 5200
+F 0 "#PWR056" H 1950 4950 50  0001 C CNN
+F 1 "GND" H 2100 5150 50  0000 C CNN
+F 2 "" H 1950 5200 50  0001 C CNN
+F 3 "" H 1950 5200 50  0001 C CNN
+	1    1950 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 5150 1800 5150
+	2150 5550 1650 5550
 Wire Wire Line
 	2150 5350 1650 5350
 Wire Wire Line
-	2150 5550 1650 5550
-Wire Wire Line
-	1650 5650 2150 5650
-Wire Wire Line
-	1800 5150 1800 5200
-Wire Wire Line
-	1800 5000 1800 5050
-Wire Wire Line
-	3150 5350 3550 5350
+	1650 5450 2150 5450
 Wire Wire Line
 	3150 5550 3550 5550
 Wire Wire Line
-	3550 5650 3150 5650
+	3150 5350 3550 5350
+Wire Wire Line
+	3550 5450 3150 5450
 $Comp
 L power:+3.3V #PWR062
 U 1 1 612EF478
@@ -728,20 +712,18 @@ F 3 "" H 2550 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3100 2700 0    50   ~ 0
-1A -> 1B\n2A <- 2B\n
-Text Notes 3100 5100 0    50   ~ 0
-1A -> 1B\n2A <- 2B\n
-Text Label 3550 5350 0    50   ~ 0
-TMS_SWDIO
+1A <- 1B\n2A ->2B\n
 Text Label 3550 5550 0    50   ~ 0
 TMS_SWDIO
-Text Label 3550 5650 0    50   ~ 0
+Text Label 3550 5350 0    50   ~ 0
+TMS_SWDIO
+Text Label 3550 5450 0    50   ~ 0
 TDO_SWO
-Text HLabel 1650 5550 0    50   Input ~ 0
-JTAG_TDO
-Text HLabel 1650 5650 0    50   Input ~ 0
-JTAG_RTCK
 Text HLabel 1650 5350 0    50   Input ~ 0
+JTAG_TDO
+Text HLabel 1650 5450 0    50   Input ~ 0
+JTAG_RTCK
+Text HLabel 1650 5550 0    50   Input ~ 0
 JTAG_TDI
 Wire Wire Line
 	1900 4850 1900 4950
@@ -754,8 +736,8 @@ L Device:D D4
 U 1 1 612FA2D5
 P 1500 4600
 F 0 "D4" H 1350 4650 50  0000 C CNN
-F 1 "1N4148W" H 1750 4650 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 1500 4600 50  0001 C CNN
+F 1 "CDSU101A" H 1750 4650 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 1500 4600 50  0001 C CNN
 F 3 "~" H 1500 4600 50  0001 C CNN
 	1    1500 4600
 	1    0    0    -1  
@@ -765,8 +747,8 @@ L Device:D D5
 U 1 1 612FB806
 P 1500 4750
 F 0 "D5" H 1350 4800 50  0000 C CNN
-F 1 "1N4148W" H 1750 4800 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 1500 4750 50  0001 C CNN
+F 1 "CDSU101A" H 1750 4800 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-523" H 1500 4750 50  0001 C CNN
 F 3 "~" H 1500 4750 50  0001 C CNN
 	1    1500 4750
 	1    0    0    -1  
@@ -833,10 +815,6 @@ F 3 "" H 3250 6000 50  0001 C CNN
 	1    3250 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 5450 3250 5450
-Wire Wire Line
-	3250 5450 3250 5700
 $Comp
 L power:+3.3V #PWR057
 U 1 1 612FF5CD
@@ -862,10 +840,6 @@ F 4 "" H 1950 4400 50  0001 C CNN "MPN"
 	1    1950 4400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2150 5450 2050 5450
-Wire Wire Line
-	2050 5450 2050 5700
 Wire Wire Line
 	1300 4750 1300 4850
 Wire Wire Line
@@ -943,4 +917,30 @@ Wire Wire Line
 	7250 3150 7900 3150
 Wire Wire Line
 	7900 3050 7250 3050
+Wire Wire Line
+	2150 2650 1950 2650
+Wire Wire Line
+	1950 2650 1950 2800
+Wire Wire Line
+	2150 2750 1800 2750
+Wire Wire Line
+	1800 2750 1800 2600
+Text Notes 3150 5050 0    50   ~ 0
+1A <- 1B\n2A ->2B\n
+Wire Wire Line
+	2150 5150 1800 5150
+Wire Wire Line
+	1800 5150 1800 5000
+Wire Wire Line
+	2150 5050 1950 5050
+Wire Wire Line
+	1950 5050 1950 5200
+Wire Wire Line
+	2150 5650 2050 5650
+Wire Wire Line
+	2050 5650 2050 5700
+Wire Wire Line
+	3250 5650 3250 5700
+Wire Wire Line
+	3150 5650 3250 5650
 $EndSCHEMATC
