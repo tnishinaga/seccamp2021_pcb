@@ -1076,9 +1076,9 @@ Text HLabel 7900 2700 2    50   Input ~ 0
 JTAG_TDO
 Text HLabel 7900 2800 2    50   Input ~ 0
 JTAG_TMS
-Text HLabel 7900 4200 2    50   Input ~ 0
-JTAG_nSRST
 Text HLabel 7900 4300 2    50   Input ~ 0
+JTAG_nSRST
+Text HLabel 7900 4200 2    50   Input ~ 0
 JTAG_nTRST
 Text HLabel 7900 3200 2    50   Input ~ 0
 JTAG_RTCK
@@ -1273,62 +1273,10 @@ Wire Wire Line
 	1650 3550 1650 3700
 Wire Wire Line
 	1650 4000 1650 4200
-Text Label 7900 4100 0    50   ~ 0
-JTAG_ACT_LED
-Text HLabel 7900 3800 2    50   Input ~ 0
-SWD_EN
-Wire Wire Line
-	10750 5600 10750 5700
-Wire Wire Line
-	10750 5200 10750 5300
-$Comp
-L Device:R R?
-U 1 1 615CF7DD
-P 10750 5450
-AR Path="/615CF7DD" Ref="R?"  Part="1" 
-AR Path="/61247445/615CF7DD" Ref="R14"  Part="1" 
-F 0 "R14" V 10850 5550 50  0000 C CNN
-F 1 "1k" V 10850 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10680 5450 50  0001 C CNN
-F 3 "~" H 10750 5450 50  0001 C CNN
-F 4 "RC0603FR-072KL" H 10750 5450 50  0001 C CNN "MPN"
-	1    10750 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 615CF7E3
-P 10750 5850
-AR Path="/615CF7E3" Ref="D?"  Part="1" 
-AR Path="/61247445/615CF7E3" Ref="D3"  Part="1" 
-F 0 "D3" V 10789 5732 50  0000 R CNN
-F 1 "JTAG_ACT" V 10698 5732 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10750 5850 50  0001 C CNN
-F 3 "~" H 10750 5850 50  0001 C CNN
-	1    10750 5850
-	0    -1   -1   0   
-$EndComp
-Text Label 10600 6100 2    50   ~ 0
-JTAG_ACT_LED
 Text HLabel 7900 3900 2    50   Input ~ 0
+SWD_EN
+Text HLabel 7900 3800 2    50   Input ~ 0
 JTAG_EN
-$Comp
-L power:+3V3 #PWR?
-U 1 1 613CB40C
-P 10750 5200
-AR Path="/613CB40C" Ref="#PWR?"  Part="1" 
-AR Path="/61247445/613CB40C" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 10750 5050 50  0001 C CNN
-F 1 "+3V3" H 10765 5373 50  0000 C CNN
-F 2 "" H 10750 5200 50  0001 C CNN
-F 3 "" H 10750 5200 50  0001 C CNN
-	1    10750 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 6100 10750 6000
-Wire Wire Line
-	10750 6100 10600 6100
 Wire Notes Line
 	8800 700  8800 4350
 Wire Notes Line
@@ -1361,8 +1309,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 4000 7100 4000
 Wire Wire Line
-	7100 4100 7900 4100
-Wire Wire Line
 	7900 4200 7100 4200
 Wire Wire Line
 	7100 4300 7900 4300
@@ -1374,4 +1320,5 @@ Text Label 5050 3400 0    50   ~ 0
 ~RESET
 Text Notes 7050 4550 0    50   ~ 0
 ACBUS8 & 9 are connected \nto an internal pull-up resistor.
+NoConn ~ 7100 4100
 $EndSCHEMATC
