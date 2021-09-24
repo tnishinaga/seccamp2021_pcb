@@ -237,8 +237,6 @@ F 3 "" H 5200 5950 50  0001 C CNN
 	1    5200 5950
 	1    0    0    -1  
 $EndComp
-Text HLabel 1250 4600 0    50   Input ~ 0
-SWDIO_OE
 Text HLabel 1650 3250 0    50   Input ~ 0
 JTAG_TDO
 $Comp
@@ -434,8 +432,6 @@ F 4 "SN74AXCH4T245PW" H 2650 2850 50  0001 C CNN "MPN"
 	1    2650 2850
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 2450 0    50   Input ~ 0
-JTAG_EN
 Wire Wire Line
 	2550 1950 2550 2250
 Wire Wire Line
@@ -459,7 +455,6 @@ Wire Wire Line
 	2050 2450 2050 2550
 Wire Wire Line
 	2050 2550 2150 2550
-Connection ~ 2050 2450
 $Comp
 L power:GND #PWR054
 U 1 1 6167DD42
@@ -479,8 +474,6 @@ Wire Wire Line
 	2150 3150 1650 3150
 Wire Wire Line
 	1650 3250 2150 3250
-Wire Wire Line
-	1650 2450 2050 2450
 Text Label 7250 3550 0    50   ~ 0
 TMS_SWDIO
 Text Label 3550 3150 0    50   ~ 0
@@ -530,12 +523,12 @@ VTREF
 $Comp
 L power:+3.3V #PWR055
 U 1 1 612EF423
-P 1800 5000
-F 0 "#PWR055" H 1800 4850 50  0001 C CNN
-F 1 "+3.3V" H 1650 5050 50  0000 C CNN
-F 2 "" H 1800 5000 50  0001 C CNN
-F 3 "" H 1800 5000 50  0001 C CNN
-	1    1800 5000
+P 1800 5100
+F 0 "#PWR055" H 1800 4950 50  0001 C CNN
+F 1 "+3.3V" H 1650 5150 50  0000 C CNN
+F 2 "" H 1800 5100 50  0001 C CNN
+F 3 "" H 1800 5100 50  0001 C CNN
+	1    1800 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -675,46 +668,8 @@ Text HLabel 1650 5350 0    50   Input ~ 0
 JTAG_RTCK
 Text HLabel 1650 5550 0    50   Input ~ 0
 JTAG_TDI
-Wire Wire Line
-	1900 4850 1900 4950
-Wire Wire Line
-	1900 4950 2150 4950
-Text HLabel 1250 4750 0    50   Input ~ 0
+Text HLabel 1400 4950 0    50   Input ~ 0
 SWD_EN
-$Comp
-L Device:D D4
-U 1 1 612FA2D5
-P 1500 4600
-F 0 "D4" H 1350 4650 50  0000 C CNN
-F 1 "CDSU101A" H 1750 4650 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 1500 4600 50  0001 C CNN
-F 3 "~" H 1500 4600 50  0001 C CNN
-	1    1500 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D5
-U 1 1 612FB806
-P 1500 4750
-F 0 "D5" H 1350 4800 50  0000 C CNN
-F 1 "CDSU101A" H 1750 4800 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 1500 4750 50  0001 C CNN
-F 3 "~" H 1500 4750 50  0001 C CNN
-	1    1500 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 4600 1950 4600
-Wire Wire Line
-	1950 4750 1950 4600
-Wire Wire Line
-	1650 4750 1950 4750
-Wire Wire Line
-	1250 4600 1350 4600
-Wire Wire Line
-	1350 4750 1300 4750
-Wire Wire Line
-	1950 4850 2150 4850
 $Comp
 L Device:R R?
 U 1 1 61350B01
@@ -765,46 +720,6 @@ F 3 "" H 3250 6000 50  0001 C CNN
 	1    3250 6000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR057
-U 1 1 612FF5CD
-P 1950 4200
-F 0 "#PWR057" H 1950 4050 50  0001 C CNN
-F 1 "+3.3V" H 1950 4350 50  0000 C CNN
-F 2 "" H 1950 4200 50  0001 C CNN
-F 3 "" H 1950 4200 50  0001 C CNN
-	1    1950 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 612FF8E0
-P 1950 4400
-AR Path="/612FF8E0" Ref="R?"  Part="1" 
-AR Path="/613347ED/612FF8E0" Ref="R15"  Part="1" 
-F 0 "R15" H 2050 4350 50  0000 C CNN
-F 1 "10k" H 2100 4450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 4400 50  0001 C CNN
-F 3 "~" H 1950 4400 50  0001 C CNN
-F 4 "" H 1950 4400 50  0001 C CNN "MPN"
-	1    1950 4400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1300 4750 1300 4850
-Wire Wire Line
-	1300 4850 1900 4850
-Connection ~ 1300 4750
-Wire Wire Line
-	1300 4750 1250 4750
-Wire Wire Line
-	1950 4750 1950 4850
-Connection ~ 1950 4750
-Wire Wire Line
-	1950 4200 1950 4250
-Wire Wire Line
-	1950 4550 1950 4600
-Connection ~ 1950 4600
 Wire Notes Line
 	750  1000 6250 1000
 Wire Notes Line
@@ -872,8 +787,6 @@ Text Notes 3150 5050 0    50   ~ 0
 Wire Wire Line
 	2150 5150 1800 5150
 Wire Wire Line
-	1800 5150 1800 5000
-Wire Wire Line
 	2150 5050 1950 5050
 Wire Wire Line
 	1950 5050 1950 5200
@@ -934,4 +847,174 @@ Wire Wire Line
 	1800 2650 1800 2600
 Text Notes 3100 2700 0    50   ~ 0
 1A -> 1B\n2A <- 2B\n
+Text HLabel 1250 1750 0    50   Input ~ 0
+SWD_EN
+Text Label 1850 2450 0    50   ~ 0
+~SWD_EN
+$Comp
+L 74xx:74LS00 U?
+U 1 1 614FD585
+P 1550 2150
+F 0 "U?" V 1504 2338 50  0000 L CNN
+F 1 "74LS00" V 1595 2338 50  0000 L CNN
+F 2 "" H 1550 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1550 2150 50  0001 C CNN
+	1    1550 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 2 1 615000D2
+P 1600 6650
+F 0 "U?" H 1600 6975 50  0000 C CNN
+F 1 "74LS00" H 1600 6884 50  0000 C CNN
+F 2 "" H 1600 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1600 6650 50  0001 C CNN
+	2    1600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 3 1 6150200F
+P 1650 7300
+F 0 "U?" H 1650 7625 50  0000 C CNN
+F 1 "74LS00" H 1650 7534 50  0000 C CNN
+F 2 "" H 1650 7300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 1650 7300 50  0001 C CNN
+	3    1650 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 4 1 61505188
+P 2300 6650
+F 0 "U?" H 2300 6975 50  0000 C CNN
+F 1 "74LS00" H 2300 6884 50  0000 C CNN
+F 2 "" H 2300 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 2300 6650 50  0001 C CNN
+	4    2300 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1850 1650 1750
+Wire Wire Line
+	1650 1750 1450 1750
+Wire Wire Line
+	1450 1850 1450 1750
+Connection ~ 1450 1750
+Wire Wire Line
+	1450 1750 1250 1750
+Wire Wire Line
+	1550 2450 2050 2450
+Connection ~ 2050 2450
+Wire Wire Line
+	1800 5150 1800 5100
+Wire Wire Line
+	1400 4950 2150 4950
+Text HLabel 1150 6550 0    50   Input ~ 0
+SWD_EN
+Text HLabel 1150 6750 0    50   Input ~ 0
+SWDIO_OE
+Wire Wire Line
+	2000 6550 1950 6550
+Wire Wire Line
+	1950 6550 1950 6650
+Wire Wire Line
+	1950 6650 1900 6650
+Wire Wire Line
+	1950 6650 1950 6750
+Wire Wire Line
+	1950 6750 2000 6750
+Connection ~ 1950 6650
+Wire Wire Line
+	1300 6750 1150 6750
+Wire Wire Line
+	1150 6550 1300 6550
+Text Label 1750 4850 0    50   ~ 0
+SWD_OE1
+Wire Wire Line
+	2150 4850 1750 4850
+Text Label 2750 6650 0    50   ~ 0
+SWD_OE1
+Wire Wire Line
+	2600 6650 2750 6650
+$Comp
+L power:GND #PWR?
+U 1 1 61584E1F
+P 1150 7500
+F 0 "#PWR?" H 1150 7250 50  0001 C CNN
+F 1 "GND" H 1155 7327 50  0000 C CNN
+F 2 "" H 1150 7500 50  0001 C CNN
+F 3 "" H 1150 7500 50  0001 C CNN
+	1    1150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7200 1150 7200
+Wire Wire Line
+	1150 7200 1150 7400
+Wire Wire Line
+	1350 7400 1150 7400
+Connection ~ 1150 7400
+Wire Wire Line
+	1150 7400 1150 7500
+NoConn ~ 1950 7300
+$Comp
+L power:GND #PWR?
+U 1 1 61594238
+P 3300 7600
+F 0 "#PWR?" H 3300 7350 50  0001 C CNN
+F 1 "GND" H 3305 7427 50  0000 C CNN
+F 2 "" H 3300 7600 50  0001 C CNN
+F 3 "" H 3300 7600 50  0001 C CNN
+	1    3300 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61594B24
+P 3300 6500
+F 0 "#PWR?" H 3300 6350 50  0001 C CNN
+F 1 "+3.3V" H 3300 6650 50  0000 C CNN
+F 2 "" H 3300 6500 50  0001 C CNN
+F 3 "" H 3300 6500 50  0001 C CNN
+	1    3300 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 615A45C7
+P 3950 7050
+F 0 "C?" V 3698 7050 50  0000 C CNN
+F 1 "0.1uF" V 3789 7050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 6900 50  0001 C CNN
+F 3 "~" H 3950 7050 50  0001 C CNN
+	1    3950 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 5 1 61506D2C
+P 3300 7050
+F 0 "U?" H 3530 7096 50  0000 L CNN
+F 1 "74LS00" H 3530 7005 50  0000 L CNN
+F 2 "" H 3300 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3300 7050 50  0001 C CNN
+	5    3300 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6500 3300 6550
+Wire Wire Line
+	3300 6550 3950 6550
+Wire Wire Line
+	3950 6550 3950 6900
+Connection ~ 3300 6550
+Wire Wire Line
+	3950 7200 3950 7550
+Wire Wire Line
+	3950 7550 3300 7550
+Wire Wire Line
+	3300 7550 3300 7600
+Connection ~ 3300 7550
 $EndSCHEMATC

@@ -1076,9 +1076,9 @@ Text HLabel 7900 2700 2    50   Input ~ 0
 JTAG_TDO
 Text HLabel 7900 2800 2    50   Input ~ 0
 JTAG_TMS
-Text HLabel 7900 4300 2    50   Input ~ 0
+Text HLabel 7900 4100 2    50   Input ~ 0
 JTAG_nSRST
-Text HLabel 7900 4200 2    50   Input ~ 0
+Text HLabel 7900 3500 2    50   Input ~ 0
 JTAG_nTRST
 Text HLabel 7900 3200 2    50   Input ~ 0
 JTAG_RTCK
@@ -1275,8 +1275,6 @@ Wire Wire Line
 	1650 4000 1650 4200
 Text HLabel 7900 3900 2    50   Input ~ 0
 SWD_EN
-Text HLabel 7900 3800 2    50   Input ~ 0
-JTAG_EN
 Wire Notes Line
 	8800 700  8800 4350
 Wire Notes Line
@@ -1285,6 +1283,18 @@ Wire Notes Line
 	11150 4350 11150 700 
 Wire Notes Line
 	11150 700  8800 700 
+NoConn ~ 7100 2900
+NoConn ~ 7100 3000
+NoConn ~ 7100 3100
+Wire Wire Line
+	7100 3900 7900 3900
+Wire Wire Line
+	7900 4000 7100 4000
+NoConn ~ 7100 3400
+NoConn ~ 7100 3700
+NoConn ~ 7100 3600
+Text Label 5050 3400 0    50   ~ 0
+~RESET
 $Comp
 L Interface_USB:FT232H U?
 U 1 1 612531EB
@@ -1299,26 +1309,11 @@ F 4 "FT232HL-REEL" H 6200 3700 50  0001 C CNN "MPN"
 	1    6200 3700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7100 2900
-NoConn ~ 7100 3000
-NoConn ~ 7100 3100
 Wire Wire Line
-	7900 3800 7100 3800
+	7100 4100 7900 4100
+NoConn ~ 7100 4200
+NoConn ~ 7100 4300
 Wire Wire Line
-	7100 3900 7900 3900
-Wire Wire Line
-	7900 4000 7100 4000
-Wire Wire Line
-	7900 4200 7100 4200
-Wire Wire Line
-	7100 4300 7900 4300
-NoConn ~ 7100 3400
-NoConn ~ 7100 3500
-NoConn ~ 7100 3600
-NoConn ~ 7100 3700
-Text Label 5050 3400 0    50   ~ 0
-~RESET
-Text Notes 7050 4550 0    50   ~ 0
-ACBUS8 & 9 are connected \nto an internal pull-up resistor.
-NoConn ~ 7100 4100
+	7900 3500 7100 3500
+NoConn ~ 7100 3800
 $EndSCHEMATC
